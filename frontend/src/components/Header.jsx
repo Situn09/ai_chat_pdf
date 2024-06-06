@@ -51,7 +51,7 @@ const Header = ({ setEnableSendButton }) => {
           <div style={{ width: 25, marginBottom: "-3px" }}>
             <img src={images.pdfIcon} alt="pdf_icon" />
           </div>
-          <span style={{ color: "#0FA958" }}>{fileName}</span>
+          <span className={style.file_name}>{fileName}</span>
           <label
             htmlFor="upload"
             className={`${style.add_icon} ${style.border}`}

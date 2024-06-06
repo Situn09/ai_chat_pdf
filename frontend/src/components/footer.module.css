@@ -7,6 +7,7 @@
   border-radius: 8px;
   width: 100%;
 }
+
 input {
   background-color: #e4e8ee;
   border: none;
@@ -26,4 +27,19 @@ input::placeholder {
 .send:hover {
   transform: scale(1.5);
   transition: transform 0.4s ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .input_container {
+    width: fit-content;
+    margin: auto;
+  }
+  input {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  input {
+    width: 200px;
+  }
 }

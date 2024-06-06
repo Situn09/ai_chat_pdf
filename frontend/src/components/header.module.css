@@ -34,3 +34,12 @@
   border-radius: 8px;
   padding: 0 36px;
 }
+.file_name {
+  color: "#0FA958";
+}
+@media (max-width: 640px) {
+  .upload_button span,
+  .file_name {
+    display: none;
+  }
+}
