@@ -1,8 +1,8 @@
 ## Run frontend
 
-- goto the frontend folder and
+- goto the frontend folder and run 
   ```
-  run npm intstall && npm start
+  npm intstall && npm start
   ```
 
 ## Run backend
