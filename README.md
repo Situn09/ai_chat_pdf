@@ -7,7 +7,7 @@
   after install node module run this command to run frontend
   ```
   npm start
- ```
+  ```
 
 ## Run backend
 
