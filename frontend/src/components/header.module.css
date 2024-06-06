@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 56px;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 36px;
+}
+.add_icon {
+  width: 18px;
+  margin-bottom: -3px;
+  cursor: pointer;
+}
+.border {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 5px;
+}
+.upload_button {
+  display: flex;
+  height: 39px;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0 36px;
+}

@@ -1,0 +1,19 @@
+.q_message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.a_message {
+  margin: 20px 0;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.a_message img,
+.q_message img {
+  margin-bottom: -5px;
+}

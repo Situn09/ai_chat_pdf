@@ -1,0 +1,29 @@
+.input_container {
+  background-color: #e4e8ee;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 24px;
+  border-radius: 8px;
+  width: 100%;
+}
+input {
+  background-color: #e4e8ee;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inter;
+  color: #6e7583;
+}
+.send {
+  background-color: #e4e8ee;
+  cursor: pointer;
+}
+.send:hover {
+  transform: scale(1.5);
+  transition: transform 0.4s ease-in-out;
+}
