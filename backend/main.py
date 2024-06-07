@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import pipeline
 import extract_text_from_pdf
+import answer
 import os
 
 
@@ -61,9 +62,10 @@ async def ask_question(question:Question):
     pdf_text = extract_text_from_pdf("./uploaded_files/uploaded.pdf")  # Assuming the file is uploaded as 'uploaded.pdf'
     
     # Use the Hugging Face pipeline to answer the question
-    result = qa_pipeline(question=question.question, context=pdf_text)
+    # result = qa_pipeline(question=question.question, context=pdf_text)
+    result=answer(question)
     
-    return JSONResponse(content={"answer": result['answer']})
+    return JSONResponse(content={"answer": result})
 
     
 
