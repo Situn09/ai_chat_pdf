@@ -59,11 +59,12 @@ async def upload_file(file: UploadFile = File(...)):
 @app.post("/ask-question/")
 async def ask_question(question:Question):
     # Extract text from the PDF
-    pdf_text = extract_text_from_pdf("./uploaded_files/uploaded.pdf")  # Assuming the file is uploaded as 'uploaded.pdf'
+    # pdf_text = extract_text_from_pdf("./uploaded_files/uploaded.pdf")  # Assuming the file is uploaded as 'uploaded.pdf'
     
+    pdf_path="./uploaded_files/uploaded.pdf"
     # Use the Hugging Face pipeline to answer the question
     # result = qa_pipeline(question=question.question, context=pdf_text)
-    result=answer(question)
+    result=answer(question,pdf_path)
     
     return JSONResponse(content={"answer": result})
 

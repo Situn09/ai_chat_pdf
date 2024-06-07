@@ -10,9 +10,9 @@ from sentence_transformers import util, SentenceTransformer
 import textwrap
 import re
 
-def answer(query):
+def answer(query,pdf_path):
 
-    pdf_path="backend/uploaded_files/Blind 75 notes.pdf"
+    # pdf_path="backend/uploaded_files/Blind 75 notes.pdf"
 
     def text_formatter(text: str) -> str:
         """Performs minor formatting on text."""
