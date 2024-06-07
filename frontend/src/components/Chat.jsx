@@ -21,7 +21,7 @@ const Chat = ({ chat, enableSendButton }) => {
         {answer && (
           <div className={style.a_message}>
             <div style={{ width: 36 }}>
-              <img src={images.logo} alt="profile_img" />
+              <img style={{ width: 36 }} src={images.logo} alt="profile_img" />
             </div>
             {answer}
           </div>
