@@ -64,7 +64,7 @@ async def ask_question(question:Question):
     pdf_path="./uploaded_files/uploaded.pdf"
     # Use the Hugging Face pipeline to answer the question
     # result = qa_pipeline(question=question.question, context=pdf_text)
-    result=answer(question,pdf_path)
+    result=answer(question.question,pdf_path)
     
     return JSONResponse(content={"answer": result})
 
