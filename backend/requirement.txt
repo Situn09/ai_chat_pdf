@@ -3,3 +3,8 @@ uvicorn
 pymupdf
 transformers 
 torch
+PyMuPDF 
+tqdm 
+sentence-transformers
+accelerate 
+bitsandbytes
